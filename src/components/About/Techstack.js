@@ -29,18 +29,6 @@ function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <img src={C} alt="C++" />
-        <div className="tech-icons-text">C++</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Javascript} alt="javascript" />
-        <div className="tech-icons-text">Javascript</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Typescript} alt="typescript" />
-        <div className="tech-icons-text">Javascript</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <img src={Go} alt="go" />
         <div className="tech-icons-text">Go</div>
       </Col>
