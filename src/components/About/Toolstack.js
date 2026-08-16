@@ -4,29 +4,34 @@ import macOs from "../../Assets/TechIcons/Apple MacOSX.svg";
 import chrome from "../../Assets/TechIcons/Google Chrome.svg";
 import vsCode from "../../Assets/TechIcons/vscode.svg";
 import intelliJ from "../../Assets/TechIcons/intellij-idea.svg";
+import Git from "../../Assets/TechIcons/Git.svg";
+import SQL from "../../Assets/TechIcons/SQL.svg";
+import Python from "../../Assets/TechIcons/Python.svg";
 
 function Toolstack() {
-  return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={macOs} alt="macOs" className="tech-icon-images" />
-        <div className="tech-icons-text">Mac Os</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons ">
-        <img src={chrome} alt="Chrome" className="tech-icon-images" />
-        <div className="tech-icons-text">Google Chrome</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons ">
-        <img src={vsCode} alt="vsCode" className="tech-icon-images" />
-        <div className="tech-icons-text">Vs Code</div>
-      </Col>
+    return (
+        <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+            <Col xs={4} md={2} className="tech-icons">
+                <img src={Python} alt="Python" />
+                <div className="tech-icons-text">Python</div>
+            </Col>
 
-      <Col xs={4} md={2} className="tech-icons ">
-        <img src={intelliJ} alt="go" className="tech-icon-images" />
-        <div className="tech-icons-text">IntelliJ</div>
-      </Col>
-    </Row>
-  );
+            <Col xs={4} md={2} className="tech-icons">
+                <img src={SQL} alt="SQL" />
+                <div className="tech-icons-text">Postgresql</div>
+            </Col>
+
+            <Col xs={4} md={2} className="tech-icons">
+                <img src={Git} alt="git" />
+                <div className="tech-icons-text">Git</div>
+            </Col>
+
+            <Col xs={4} md={2} className="tech-icons ">
+                <img src={intelliJ} alt="go" className="tech-icon-images" />
+                <div className="tech-icons-text">IntelliJ</div>
+            </Col>
+        </Row>
+    );
 }
 
 export default Toolstack;

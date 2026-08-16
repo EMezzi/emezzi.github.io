@@ -1,53 +1,35 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { SiNextdotjs, SiSolidity } from "react-icons/si";
-import { FaRust } from "react-icons/fa";
-import Go from "../../Assets/TechIcons/go.svg";
-import C from "../../Assets/TechIcons/C++.svg";
-import Javascript from "../../Assets/TechIcons/Javascript.svg";
-import Node from "../../Assets/TechIcons/Node.svg";
-import ReactIcon from "../../Assets/TechIcons/React.svg";
-import HaskellIcon from "../../Assets/TechIcons/Haskell.svg";
-import Java from "../../Assets/TechIcons/Java.svg";
-import Python from "../../Assets/TechIcons/Python.svg";
-import Typescript from "../../Assets/TechIcons/Typescript.svg";
-import Git from "../../Assets/TechIcons/Git.svg";
-import Firebase from "../../Assets/TechIcons/Firebase.svg";
-import Redis from "../../Assets/TechIcons/Redis.svg";
-import Docker from "../../Assets/TechIcons/Docker.svg";
-import Mongo from "../../Assets/TechIcons/Mongo.svg";
-import SQL from "../../Assets/TechIcons/SQL.svg";
-import Kubernates from "../../Assets/TechIcons/Kubernates.svg";
-import Redux from "../../Assets/TechIcons/Redux.svg";
-import Tailwind from "../../Assets/TechIcons/Tailwind.svg";
-import MUI from "../../Assets/TechIcons/MUI.svg";
-import Postman from "../../Assets/TechIcons/Postman.svg";
-import AWS from "../../Assets/TechIcons/AWS.svg";
-import Kafka from "../../Assets/TechIcons/Kafka.svg";
+import NeuroAI from "../../Assets/TechIcons/NeuroAI.png"
+import CTI from "../../Assets/TechIcons/CTI.png"
+import RemoteSensing from "../../Assets/TechIcons/RemoteSensing.png";
+import LLMIcon from "../../Assets/TechIcons/LLM.png";
 
 function Techstack() {
     return (
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+
             <Col xs={4} md={2} className="tech-icons">
-                <img src={ReactIcon} alt="react" />
+                <img src={NeuroAI} alt="Neurosymbolic AI" style={{ width: "24px", height: "24px", objectFit: "contain" }} />
+                <div className="tech-icons-text">Neurosymbolic AI</div>
+            </Col>
+
+            <Col xs={4} md={2} className="tech-icons">
+                <img src={LLMIcon} alt="LLM" style={{ width: "24px", height: "24px", objectFit: "contain" }} />
                 <div className="tech-icons-text">Large Language Models</div>
             </Col>
+
+
             <Col xs={4} md={2} className="tech-icons">
-                <img src={ReactIcon} alt="react" />
+                <img src={CTI} alt="CTI" style={{ width: "24px", height: "24px", objectFit: "contain" }}/>
                 <div className="tech-icons-text">Cyber Threat Intelligence</div>
             </Col>
+
             <Col xs={4} md={2} className="tech-icons">
-                <SiSolidity fontSize={"24px"} />
+                <img src={RemoteSensing} alt="Remote Sensing" style={{ width: "24px", height: "24px", objectFit: "contain" }} />
                 <div className="tech-icons-text">Remote Sensing</div>
             </Col>
-            <Col xs={4} md={2} className="tech-icons">
-                <img src={Redux} alt="redux" />
-                <div className="tech-icons-text">Risk Analysis</div>
-            </Col>
-            <Col xs={4} md={2} className="tech-icons">
-                <img src={Mongo} alt="mongoDb" />
-                <div className="tech-icons-text">Uncertainty Quantification</div>
-            </Col>
+
         </Row>
     );
 }
